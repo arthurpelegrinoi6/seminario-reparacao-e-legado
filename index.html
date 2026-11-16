@@ -20,7 +20,16 @@ body{margin:0;overflow-wrap:anywhere;font-family:'Poppins',system-ui,sans-serif;
 .wrap{max-width:1200px;margin:0 auto;padding:0 16px}
 @media(min-width:1000px){.wrap{padding:0}}
 @media(min-width:1000px) and (max-width:1359px){.wrap{padding:0 40px}}
-h1{font-size:40px;line-height:1.2;font-weight:700;color:var(--vinho);margin:40px 0 28px}
+h1{font-size:40px;line-height:1.2;font-weight:700;color:var(--vinho);margin:40px 0 20px}
+.when{display:flex;align-items:center;gap:20px;margin:0 0 32px}
+.cal{flex:0 0 auto;width:84px;border-radius:12px;overflow:hidden;background:#fff;text-align:center;box-shadow:0 6px 18px rgba(123,28,44,.14);border:1px solid #eadfd3}
+.cal .m{display:block;background:linear-gradient(90deg,var(--vinho),var(--coral-d));color:#fff;font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;padding:5px 0 4px;padding-left:.18em}
+.cal .d{display:block;font-size:42px;font-weight:700;line-height:1;color:var(--vinho);padding:10px 0 12px}
+.wtxt{min-width:0}
+.wd{display:block;font-size:24px;font-weight:700;color:var(--coral-d);line-height:1.3}
+.wh{display:block;font-size:15px;color:var(--text);margin-top:4px}
+.wh i{font-style:normal;color:#c9bcae;margin:0 8px}
+@media(max-width:699px){.when{gap:14px;margin-bottom:24px}.cal{width:68px}.cal .d{font-size:32px;padding:8px 0 9px}.cal .m{font-size:11px}.wd{font-size:18px}.wh{font-size:13px}.wh i{margin:0 5px}}
 .hero{display:block;width:100%;height:auto;border-radius:10px}
 .cols{display:grid;grid-template-columns:minmax(0,1fr);gap:32px;padding:40px 0 56px;align-items:start}
 @media(min-width:1000px){.cols{grid-template-columns:minmax(0,65%) minmax(0,1fr);gap:2%;justify-content:space-between}}
@@ -97,6 +106,7 @@ footer{text-align:center;color:#8a7f7f;font-size:12px;padding:24px 16px}
 <main>
 <div class="wrap">
 <h1>Seminário Científico: Reparação e Legado</h1>
+<div class="when"><div class="cal" aria-hidden="true"><span class="m">dez</span><span class="d">02</span></div><div class="wtxt"><span class="wd">Quarta-feira, 2 de dezembro de 2026</span><span class="wh">9h às 18h<i>•</i>Fundação Dom Cabral, Nova Lima (MG)</span></div></div>
 <img class="hero" src="https://arthurpelegrinoi6.github.io/seminario-reparacao-e-legado/assets/hero.jpg" width="2000" height="1272" alt="Seminário Científico: Reparação e Legado – É possível uma reparação que alcance um novo patamar de desenvolvimento?">
 
 <div class="cols">
